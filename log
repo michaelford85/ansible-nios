@@ -1,0 +1,79 @@
+2020-04-22 18:13:56,984 p=96449 u=michaelford n=ansible | PLAY [nios] *********************************************************************************************
+2020-04-22 18:13:57,008 p=96449 u=michaelford n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-22 18:13:58,461 p=96449 u=michaelford n=ansible | [WARNING]: Platform darwin on host infoblox is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-22 18:13:58,461 p=96449 u=michaelford n=ansible | ok: [infoblox]
+2020-04-22 18:13:58,474 p=96449 u=michaelford n=ansible | TASK [Create a network on the default network view] *****************************************************
+2020-04-22 18:13:59,011 p=96449 u=michaelford n=ansible | fatal: [infoblox]: FAILED! => changed=false 
+  msg: infoblox-client is required but does not appear to be installed.  It can be installed using the command `pip install infoblox-client`
+2020-04-22 18:13:59,013 p=96449 u=michaelford n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-22 18:13:59,014 p=96449 u=michaelford n=ansible | infoblox                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-22 18:15:54,626 p=96664 u=michaelford n=ansible | PLAY [nios] *********************************************************************************************
+2020-04-22 18:15:54,646 p=96664 u=michaelford n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-22 18:15:55,388 p=96664 u=michaelford n=ansible | [WARNING]: Platform darwin on host infoblox is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-22 18:15:55,389 p=96664 u=michaelford n=ansible | ok: [infoblox]
+2020-04-22 18:15:55,400 p=96664 u=michaelford n=ansible | TASK [Create a network on the default network view] *****************************************************
+2020-04-22 18:15:55,957 p=96664 u=michaelford n=ansible | fatal: [infoblox]: FAILED! => changed=false 
+  msg: infoblox-client is required but does not appear to be installed.  It can be installed using the command `pip install infoblox-client`
+2020-04-22 18:15:55,958 p=96664 u=michaelford n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-22 18:15:55,958 p=96664 u=michaelford n=ansible | infoblox                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-22 18:17:50,061 p=96988 u=michaelford n=ansible | PLAY [nios] *********************************************************************************************
+2020-04-22 18:17:50,081 p=96988 u=michaelford n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-22 18:17:51,078 p=96988 u=michaelford n=ansible | [WARNING]: Platform darwin on host infoblox is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-22 18:17:51,079 p=96988 u=michaelford n=ansible | ok: [infoblox]
+2020-04-22 18:17:51,087 p=96988 u=michaelford n=ansible | TASK [Create a network on the default network view] *****************************************************
+2020-04-22 18:17:51,579 p=96988 u=michaelford n=ansible | fatal: [infoblox]: FAILED! => changed=false 
+  msg: infoblox-client is required but does not appear to be installed.  It can be installed using the command `pip install infoblox-client`
+2020-04-22 18:17:51,581 p=96988 u=michaelford n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-22 18:17:51,581 p=96988 u=michaelford n=ansible | infoblox                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-22 20:43:41,876 p=99262 u=michaelford n=ansible | PLAY [nios] *********************************************************************************************
+2020-04-22 20:43:41,893 p=99262 u=michaelford n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-22 20:43:42,761 p=99262 u=michaelford n=ansible | [WARNING]: Platform darwin on host infoblox is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-22 20:43:42,762 p=99262 u=michaelford n=ansible | ok: [infoblox]
+2020-04-22 20:43:42,772 p=99262 u=michaelford n=ansible | TASK [Create a network on the default network view] *****************************************************
+2020-04-22 20:43:43,248 p=99262 u=michaelford n=ansible | fatal: [infoblox]: FAILED! => changed=false 
+  msg: infoblox-client is required but does not appear to be installed.  It can be installed using the command `pip install infoblox-client`
+2020-04-22 20:43:43,250 p=99262 u=michaelford n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-22 20:43:43,250 p=99262 u=michaelford n=ansible | infoblox                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-22 20:44:03,363 p=99347 u=michaelford n=ansible | PLAY [nios] *********************************************************************************************
+2020-04-22 20:44:03,385 p=99347 u=michaelford n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-22 20:44:04,158 p=99347 u=michaelford n=ansible | [WARNING]: Platform darwin on host infoblox is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-22 20:44:04,158 p=99347 u=michaelford n=ansible | ok: [infoblox]
+2020-04-22 20:44:04,168 p=99347 u=michaelford n=ansible | TASK [Create a network on the default network view] *****************************************************
+2020-04-22 20:44:04,698 p=99347 u=michaelford n=ansible | fatal: [infoblox]: FAILED! => changed=false 
+  msg: infoblox-client is required but does not appear to be installed.  It can be installed using the command `pip install infoblox-client`
+2020-04-22 20:44:04,700 p=99347 u=michaelford n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-22 20:44:04,700 p=99347 u=michaelford n=ansible | infoblox                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-22 20:51:07,718 p=321 u=michaelford n=ansible | PLAY [nios] *********************************************************************************************
+2020-04-22 20:51:07,736 p=321 u=michaelford n=ansible | TASK [Gathering Facts] **********************************************************************************
+2020-04-22 20:51:08,929 p=321 u=michaelford n=ansible | [WARNING]: Platform darwin on host infoblox is using the discovered Python interpreter at
+/usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+information.
+
+2020-04-22 20:51:08,930 p=321 u=michaelford n=ansible | ok: [infoblox]
+2020-04-22 20:51:08,947 p=321 u=michaelford n=ansible | TASK [Create a network on the default network view] *****************************************************
+2020-04-22 20:51:09,662 p=321 u=michaelford n=ansible | fatal: [infoblox]: FAILED! => changed=false 
+  msg: infoblox-client is required but does not appear to be installed.  It can be installed using the command `pip install infoblox-client`
+2020-04-22 20:51:09,665 p=321 u=michaelford n=ansible | PLAY RECAP **********************************************************************************************
+2020-04-22 20:51:09,666 p=321 u=michaelford n=ansible | infoblox                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-04-22 20:55:09,230 p=851 u=michaelford n=ansible | Encryption successful

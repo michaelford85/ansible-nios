@@ -1,0 +1,13 @@
+---
+- hosts: nios
+  connection: local
+  tasks:
+    - name: Create a network on the default network view
+      nios_network:
+        network: 192.168.100.0/24
+        comment: sets the IPv4 network
+        options:
+          - name: domain-name
+            value: ansible.com
+        state: present
+        provider: "{{nios_provider}}"
