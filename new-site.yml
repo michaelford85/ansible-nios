@@ -6,12 +6,10 @@
   vars:
     - network_id: "10.0"
     - view: default
-    # - nios_username:
-    # - nios_password:
-    # - nios_provider:
-    #     host: infoblox.michaelanthonyford.com
-    #     username: "{{ nios_username }}"
-    #     password: "{{ nios_password }}"
+    - nios_provider:
+        host: "{{ nios_host }}"
+        username: "{{ nios_username }}"
+        password: "{{ nios_password }}"
 
   tasks:
     - name: configure a new network view
