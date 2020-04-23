@@ -1,0 +1,49 @@
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - ./credentials/nios.yml
+  vars:
+    - network_id: "10.0"
+    - view: default
+    # - nios_username:
+    # - nios_password:
+    # - nios_provider:
+    #     host: infoblox.michaelanthonyford.com
+    #     username: "{{ nios_username }}"
+    #     password: "{{ nios_password }}"
+
+  tasks:
+    - name: configure a new network view
+      nios_network_view:
+        name: "{{ view }}"
+        state: present
+        provider: "{{nios_provider}}"
+
+    - name: "Create a network on the {{ view }} network view"
+      nios_network:
+        container: yes
+        options:
+          - name: domain-name
+            value: ansible.com
+        network_view: "{{ view }}"
+        network: "{{network_id}}.0.0/16"
+        comment: This network is added by Ansible
+        state: present
+        provider: "{{nios_provider}}"
+
+    - name: "Create subnets on the {{ view }} network view"
+      nios_network:
+        network_view: "{{ view }}"
+        network: "{{ item }}"
+        state: present
+        provider: "{{nios_provider}}"
+      with_items:
+        - "{{ network_id }}.1.0/24"
+        - "{{ network_id }}.2.0/24"
+        - "{{ network_id }}.3.0/24"
+        - "{{ network_id }}.4.0/24"
+        - "{{ network_id }}.5.0/24"
+        - "{{ network_id }}.6.0/24"
+        - "{{ network_id }}.7.0/24"
+        - "{{ network_id }}.8.0/24"
