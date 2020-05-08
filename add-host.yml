@@ -14,6 +14,7 @@
   tasks:
     - name: Add host to Infoblox Appliance
       nios_host_record:
+        view: default
         name: the_ansible_host
         ipv4:
           # - address: {nios_next_ip: 192.168.2.0/24}
