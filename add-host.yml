@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - ./credentials/nios.yml
+  vars:
+    - network_id: "10.0"
+    - view: default
+    - nios_provider:
+        host: "{{ nios_host }}"
+        username: "{{ nios_username }}"
+        password: "{{ nios_password }}"
+
+  tasks:
+    - name: Add host to Infoblox Appliance
+      nios_host_record:
+        name: the_ansible_host
+        ipv4:
+          - address: {nios_next_ip: 192.168.2.0/24}
+        state: present
+        # extattrs:
+        #   - ansible_host: 3.4.2.1
+        provider: "{{nios_provider}}"
