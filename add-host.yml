@@ -16,7 +16,9 @@
       nios_host_record:
         name: the_ansible_host
         ipv4:
-          - address: {nios_next_ip: 192.168.2.0/24}
+          # - address: {nios_next_ip: 192.168.2.0/24}
+          - ipv4addr:
+              "{{ lookup('nios_next_ip', '192.168.2.0/24', provider=nios_provider)[0] }}"
         state: present
         # extattrs:
         #   - ansible_host: 3.4.2.1
